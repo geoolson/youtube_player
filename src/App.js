@@ -6,7 +6,7 @@ const App = () => {
   const width = document.body.clientWidth < 420 ? document.body.clientWidth : 420;
   const height = width * (9/16);
   return (
-    <div className="container">
+    <div className="container" style={{width}}>
       <form
         onSubmit={e => {
           e.preventDefault();
