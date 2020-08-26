@@ -1,0 +1,15 @@
+button {
+    color: grey;
+    background-color: rgba(32,34,37);
+    border: none;
+    padding: 0.5rem;
+    margin-left: 1em;
+}
+
+input[type="text"] {
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem;
+    border: none;
+    background-color: #8e9297;
+    padding: 0.5rem;
+}
