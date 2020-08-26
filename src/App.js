@@ -19,7 +19,7 @@ const App = () => {
             setUrl(`https://youtube.com/embed/${link.split("?v=")[1]}`);
         }}
       >
-        <input type="text" name="link" placeholder="Youtube Link"/>
+        <input type="text" name="link" placeholder="YouTube Link"/>
         <button>Submit</button>
       </form>
       <iframe

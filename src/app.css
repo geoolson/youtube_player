@@ -13,11 +13,12 @@ input[type="text"] {
     color: white;
     margin-bottom: 0.5rem;
     border: none;
-    background-color: grey;
-    padding: 0.2rem;
+    background: none;
+    border-bottom: solid grey;
 }
+
 ::placeholder{
-    color: white;
+    color: grey;
 }
 
 .container {
@@ -25,5 +26,9 @@ input[type="text"] {
 }
 
 form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: max-content;
+    padding-bottom: 0.5rem;
 }
