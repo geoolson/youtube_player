@@ -24,3 +24,7 @@ input[type="text"] {
     margin: auto;
     width: 420px;
 }
+
+form {
+    width: max-content;
+}

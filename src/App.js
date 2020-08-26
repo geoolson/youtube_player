@@ -27,6 +27,8 @@ const App = () => {
         width={width}
         height={height}
         src={url}
+        allow="autoplay"
+        allowFullScreen
       />
     </div>
   );
