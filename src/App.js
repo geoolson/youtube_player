@@ -6,7 +6,7 @@ const App = () => {
   const width = document.body.clientWidth < 420 ? document.body.clientWidth : 420;
   const height = width * (9/16);
   return (
-    <div>
+    <div className="container">
       <form
         onSubmit={e => {
           e.preventDefault();
@@ -19,7 +19,7 @@ const App = () => {
             setUrl(`https://youtube.com/embed/${link.split("?v=")[1]}`);
         }}
       >
-        <input type="text" name="link" />
+        <input type="text" name="link" placeholder="Youtube Link"/>
         <button>Submit</button>
       </form>
       <iframe
