@@ -22,7 +22,7 @@ const App = () => {
         />
         <button>Submit</button>
       </form>
-      <iframe width={window.innerWidth < 420 ? window.innerWidth : 420} src={url} />
+      <iframe width={ document.body.clientWidth < 420 ? document.body.clientWidth : 420} src={url} />
     </div>
   );
 }
