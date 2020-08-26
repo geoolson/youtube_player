@@ -1,17 +1,15 @@
 button {
-    font-size: larger;
+    font-size: large;
     color: grey;
     background-color: rgba(32,34,37);
     border: none;
-    padding: 0.5rem;
+    padding: 0.6rem;
     margin-left: 1em;
 }
 
 input[type="text"] {
-    font-size: larger;
-    margin-top: 0.5rem; 
+    font-size: large;
     color: white;
-    margin-bottom: 0.5rem;
     border: none;
     background: none;
     border-bottom: solid grey;
@@ -26,9 +24,6 @@ input[type="text"] {
 }
 
 form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: max-content;
     padding-bottom: 0.5rem;
 }
