@@ -10,7 +10,10 @@ const App = () => {
           const link = e.target.link.value;
           if(link.includes(`/embed/`))
             setUrl(link);
-          setUrl(`https://youtube.com/embed/${link.split("?v=")[1]}`);
+          else if(link.includes(`youtu.be/`))
+            setUrl(`https://youtube.com/embed/${link.split(`youtu.be/`)[1]}`);
+          else
+            setUrl(`https://youtube.com/embed/${link.split("?v=")[1]}`);
         }}
       >
         <input 
@@ -19,7 +22,7 @@ const App = () => {
         />
         <button>Submit</button>
       </form>
-      <iframe width={420} height={315} src={url} />
+      <iframe width={window.innerWidth < 420 ? window.innerWidth : 420} src={url} />
     </div>
   );
 }
