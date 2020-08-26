@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const App = () => {
   const [ url, setUrl ] = useState("https://www.youtube.com/embed/tgbNymZ7vqY");
   return (
-    <div >
+    <div>
       <form
         onSubmit={e => {
           e.preventDefault();
@@ -22,7 +22,11 @@ const App = () => {
         />
         <button>Submit</button>
       </form>
-      <iframe width={ document.body.clientWidth < 420 ? document.body.clientWidth : 420} src={url} />
+      <iframe
+        frameBorder={0}
+        width={ document.body.clientWidth < 420 ? document.body.clientWidth : 420} 
+        src={url}
+      />
     </div>
   );
 }
