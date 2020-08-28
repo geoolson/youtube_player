@@ -3,7 +3,7 @@ import './app.css';
 
 const App = () => {
   const [ url, setUrl ] = useState("https://www.youtube.com/embed/tgbNymZ7vqY");
-  const width = document.body.clientWidth < 420 ? document.body.clientWidth : 420;
+  const width = document.body.clientWidth < 800 ? document.body.clientWidth : 800;
   const height = width * (9/16);
   return (
     <div className="container" style={{width}}>
