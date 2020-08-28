@@ -23,6 +23,7 @@ const App = () => {
         <button>Submit</button>
       </form>
       <iframe
+        title="embedded youtube player"
         frameBorder={0}
         width={width}
         height={height}
